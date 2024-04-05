@@ -39,7 +39,7 @@ class AvailableTimeSlot(models.Model):
 
     def __str__(self):
         weekday_name = dict(DAYS_OF_WEEK)[self.weekday]
-        return f"{weekday_name} at {self.timeslot} in  Room {self.room}"
+        return f"{weekday_name} в {self.timeslot} в зале {self.room}"
 
 
 class Schedule(models.Model):
